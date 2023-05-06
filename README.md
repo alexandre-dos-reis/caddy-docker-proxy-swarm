@@ -17,7 +17,7 @@ Docker swarm doesn't support the `build` keyword in `compose` file, that's why y
 
 The image need to respect the following pattern: `[REGISTRY_IP]:[REGISTRY_PORT]/[IMAGE_NAME]:[IMAGE_TAG]`
 
-- Push your image to the local registry: `docker push 127.0.0.1:5000/app:1.0.0`
+- Push your image to the local registry: `docker push 127.0.0.1:5000/app:latest`
 
 - In your compose file, reference the image from the registry:
 
