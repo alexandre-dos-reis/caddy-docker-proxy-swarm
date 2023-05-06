@@ -20,7 +20,7 @@ services:
       - caddy_data:/data
     deploy:
       labels: # Global options
-        caddy.email: ajm.dosreis.daponte@gmail.com
+        caddy.email: your-email@gmail.com
       placement:
         constraints:
           - node.role == manager
