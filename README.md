@@ -40,7 +40,9 @@ networks:
 
 - Update your stack with the deploy command: `docker stack deploy -c docker-compose.yml app_stack`
 
+### Configurations
 
+- Specify the limit of old containers remaining after update with: `docker swarm update --task-history-limit 2` 
 
 
 # Resources
