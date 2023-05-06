@@ -1,5 +1,12 @@
 version: "3.9"
 
+networks:
+  caddy:
+    external: true
+
+volumes:
+  caddy_data: {}
+
 services:
   caddy:
     image: lucaslorentz/caddy-docker-proxy:ci-alpine
@@ -24,10 +31,3 @@ services:
         reservations:
           cpus: "0.1"
           memory: 200M
-
-networks:
-  caddy:
-    external: true
-
-volumes:
-  caddy_data: {}

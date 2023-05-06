@@ -1,14 +1,16 @@
 version: "3.9"
+
+networks:
+  caddy:
+    external: true
+
 services:
   whoami:
     image: containous/whoami
     networks:
-      - caddy_stack_caddy
+      - caddy
     deploy:
       replicas: 2
       labels:
-        caddy: test.reges.fr
+        caddy: test.whoami.fr
         caddy.reverse_proxy: "{{ upstreams 80 }}"
-networks:
-  caddy_stack_caddy:
-    external: true
