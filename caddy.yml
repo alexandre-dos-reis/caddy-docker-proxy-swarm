@@ -24,10 +24,10 @@ services:
         reservations:
           cpus: "0.1"
           memory: 200M
-          
+
 networks:
   caddy:
-    driver: overlay
+    external: true
 
 volumes:
   caddy_data: {}
