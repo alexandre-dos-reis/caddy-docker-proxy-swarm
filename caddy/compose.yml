@@ -24,16 +24,6 @@ services:
         reservations:
           cpus: "0.1"
           memory: 200M
-          
-  whoami:
-     image: containous/whoami
-     networks:
-       - caddy
-     deploy:
-       replicas: 2
-       labels:
-         caddy: test.reges.fr
-         caddy.reverse_proxy: "{{upstreams 80}}"
 networks:
   caddy:
     driver: overlay
