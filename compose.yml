@@ -30,7 +30,7 @@ services:
      networks:
        - caddy
      deploy:
-       replica: 2
+       replicas: 2
        labels:
          caddy: test.reges.fr
          caddy.reverse_proxy: "{{upstreams 80}}"
