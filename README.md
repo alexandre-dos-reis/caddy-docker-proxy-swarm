@@ -38,6 +38,7 @@ networks:
     external: true
 ```
 
+- Update your stack with the deploy command: `docker stack deploy -c docker-compose.yml app_stack`
 
 
 
