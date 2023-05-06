@@ -34,3 +34,9 @@ services:
        labels:
          caddy: test.reges.fr
          caddy.reverse_proxy: "{{upstreams 80}}"
+networks:
+  caddy:
+    driver: overlay
+
+volumes:
+  caddy_data: {}
