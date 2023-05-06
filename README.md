@@ -21,7 +21,7 @@ The image need to respect the following pattern: `[REGISTRY_IP]:[REGISTRY_PORT]/
 
 - In your compose file, reference the image from the registry:
 
-```
+```yml
 version: '3.9'
 services:
   app:
